@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Download, Image, X, Plus, Link } from 'lucide-react';
+import Logo from './assets/logo.png'
 
 export default function TwitterMediaDownloader() {
   const [urls, setUrls] = useState(['']);
@@ -282,8 +283,8 @@ export default function TwitterMediaDownloader() {
         <div className="bg-gray-800 rounded-xl p-8 shadow-2xl border border-gray-700">
           {/* Header */}
           <div className="text-center mb-8">
-            <div className="inline-flex items-center justify-center w-14 h-14 bg-blue-600 rounded-xl mb-4">
-              <Image className="w-7 h-7 text-white" />
+            <div className="inline-flex items-center justify-center w-14 h-14 bg-white-600 rounded-xl mb-4">
+                <img src={Logo} alt="Logo" />
             </div>
             <h1 className="text-2xl font-bold text-white mb-2">Twitter Media Downloader</h1>
             <p className="text-gray-400">Download media from tweets</p>
